@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="" ja>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ポートフォリオ02</title>
+  <meta name="description" contents="サイト説明">
+  <!-- レスポンシブ設定 -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!-- リセットCSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/sp-style.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico">
+
+  <!-- Noto Serif JP / Noto Serif -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+JP&display=swap" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- <div class="dev">
+    <p class="dev__text">開発メモ</p>
+    <p class="dev__text">Todo: headerから飛んだ時の位置</p>
+  </div> -->
+
+  <header id="header">
+  </header>
+
+  <div class="main">
+
+    <section class="swiper fv" id="fv">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="fv__img-pc" src="img/fv-bgi_01@2x.jpg" alt="fv1">
+        </div>
+        <div class="swiper-slide">
+          <img class="fv__img-pc" src="img/fv-bgi_02@2x.jpg" alt="fv1">
+        </div>
+        <div class="swiper-slide">
+          <img class="fv__img-pc" src="img/fv-bgi_03@2x.jpg" alt="fv1">
+        </div>
+      </div>
+      <div class="fv__textbox">
+        <p class="fv__main-text">Design for Smile.</p>
+        <p class="fv__sub-text--pc">快適なオフィスをデザインする</p>
+        <p class="fv__sub-text--sp">快適なオフィスを</p>
+        <p class="fv__sub-text--sp">デザインする</p>
+      </div>
+    </section>
+
+    <section id="concept" class="common__section-wrapper concept">
+      <div class="common__title-box concept__title-box">
+        <h2 class="common__title common__title--dark">CONCEPT</h2>
+        <span class="common__title-line common__title-line--dark"></span>
+      </div>
+      <div class="concept__copy--pc">
+        “働きたくなる空間”をデザインすることで<br>
+        人々を幸せにする。
+      </div>
+      <div class="concept__copy--sp">
+        “働きたくなる空間”をデザインすることで人々を幸せにする。
+      </div>
+      <div class="concept__contents">
+        <p class="concept__text">
+          私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社Cresta
+          Designだからこそできる空間デザインを提供させていただきます。
+        </p>
+        <img src="img/concept-image@2x.jpg" alt="コンセプト画像">
+      </div>
+      <div class="common__large-copy common__large-copy--dark">
+        Our Concept
+      </div>
+    </section>
+
+
+    <div class="work__bg">
+      <section id="works" class="common__section-wrapper works">
+        <div class="common__title-box works__title-box">
+          <h2 class="common__title common__title--light">WORKS</h2>
+          <span class="common__title-line common__title-line--light"></span>
+        </div>
+        <div class="works__container">
+          <div class="works__box">
+            <img src="img/card-img01@2x.jpg" alt="works1">
+            <p class="works__text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+          <div class="works__box">
+            <img src="img/card-img02@2x.jpg" alt="works2">
+            <p class="works__text">新規サイトを公開しました。今回のサイトは白と黒を基調にした</p>
+          </div>
+          <div class="works__box">
+            <img src="img/card-img03@2x.jpg" alt="works3">
+            <p class="works__text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+        </div>
+        <button class="common__button">
+          View more
+        </button>
+        <div class="common__large-copy common__large-copy--light">
+          Our Works
+        </div>
+
+      </section>
+    </div>
+
+    <section id="service" class="common__section-wrapper service">
+      <div class="common__title-box service__title-box">
+        <h2 class="common__title common__title--dark">SERVICE</h2>
+        <span class="common__title-line common__title-line--dark"></span>
+      </div>
+      <div class="service__container">
+
+        <div class="service__box">
+          <div class="service__box-bg service__box-bg1">
+            <p class="service__text">Hearing</p>
+          </div>
+          <div class="service__box-mask">
+          </div>
+        </div>
+
+        <div class="service__box">
+          <div class="service__box-bg service__box-bg2">
+            <p class="service__text">plannning</p>
+          </div>
+          <div class="service__box-mask">
+          </div>
+        </div>
+        <div class="service__box">
+          <div class="service__box-bg service__box-bg3">
+            <p class="service__text">Direction</p>
+          </div>
+          <div class="service__box-mask">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="common__large-copy common__large-copy--dark">
+        Our Service
+      </div>
+    </section>
+
+
+    <div class="contact-index__bg">
+      <section id="contact-index" class="common__section-wrapper contact-index">
+        <div class="common__title-box contact-index__title-box">
+          <h2 class="common__title common__title--light">CONTACT</h2>
+          <span class="common__title-line common__title-line--light"></span>
+        </div>
+
+        <p class="contact-index__text">
+          お気軽にご相談ください。
+        </p>
+        <a href="./contact-page.html">
+          <button class="common__button">
+            送信
+          </button>
+        </a>
+        <div class="common__large-copy common__large-copy--light">
+          Contact us
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+
+  <footer id="footer">
+  </footer>
+
+
+</body>
+
+</html>
