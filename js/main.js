@@ -8,17 +8,26 @@ $(document).ready(function () {
     （loadが非同期のためここに記述）
     ----------------------------------------- */
     $(window).on('scroll', function () {
-
       const $header = $('header');
-      const $fvSection = $('#fv');
-      const fvSectionHeight = $fvSection.outerHeight();
-
-      if ($(window).scrollTop() > fvSectionHeight) {
+      const widthPx = window.innerWidth;
+      let sectionHeight;
+      
+      // レスポンシブ対応
+      if (widthPx > 1000) {
+        const $fvSection = $('#fv');
+        sectionHeight = $fvSection.outerHeight();
+      } else {
+        const $contactPageFvSection = $('#contact-page-fv');
+        sectionHeight = $contactPageFvSection.outerHeight();
+      }
+    
+      if ($(window).scrollTop() > sectionHeight) {
         $header.addClass('header__bg-scroll'); // ヘッダーにクラスを追加
       } else {
         $header.removeClass('header__bg-scroll'); // ヘッダーからクラスを削除
       }
     });
+    
 
     /*------------------------------------
     ハンバーガー
