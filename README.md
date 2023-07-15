@@ -8,6 +8,8 @@ Cresta Designという架空の会社のポートフォリオを作成してい�
 
 [PENGIN](https://pengi-n.co.jp/blog/coding-practice2/)さんが配布しているデザインカンプを実装したものです。
 
+GitHub Pagesで公開中:[https://sim10play.github.io/portfolio02/](https://sim10play.github.io/portfolio02/)
+
 ## 2. ファイル構成
 
 - index.html: ポートフォリオのメインページ
