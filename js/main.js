@@ -9,25 +9,32 @@ $(document).ready(function () {
     ----------------------------------------- */
     $(window).on('scroll', function () {
       const $header = $('header');
-      const widthPx = window.innerWidth;
-      let sectionHeight;
-      
-      // レスポンシブ対応
-      if (widthPx > 1000) {
-        const $fvSection = $('#fv');
-        sectionHeight = $fvSection.outerHeight();
-      } else {
-        const $contactPageFvSection = $('#contact-page-fv');
-        sectionHeight = $contactPageFvSection.outerHeight();
+      const $fvSection = $('#fv');
+      const fvSectionHeight = $fvSection.outerHeight();
+      const filename = getCurrentFilename();
+      const $contactPageFvSection = $('#contact-page-fv');
+      const contactPageFvSectionHeight = $contactPageFvSection.outerHeight();
+
+      if (filename === "index") {
+        handleHeaderScroll($header, fvSectionHeight);
+      } else if (filename === "contact-page") {
+        handleHeaderScroll($header, contactPageFvSectionHeight);
       }
-    
+    });
+
+    function getCurrentFilename() {
+      const url = window.location.href;
+      return url.substring(url.lastIndexOf('/') + 1).split('.')[0];
+    }
+
+    function handleHeaderScroll($header, sectionHeight) {
       if ($(window).scrollTop() > sectionHeight) {
         $header.addClass('header__bg-scroll'); // ヘッダーにクラスを追加
       } else {
         $header.removeClass('header__bg-scroll'); // ヘッダーからクラスを削除
       }
-    });
-    
+    }
+
 
     /*------------------------------------
     ハンバーガー
