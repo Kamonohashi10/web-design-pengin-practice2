@@ -24,7 +24,13 @@ $(document).ready(function () {
 
     function getCurrentFilename() {
       const url = window.location.href;
-      return url.substring(url.lastIndexOf('/') + 1).split('.')[0];
+      const filename = url.substring(url.lastIndexOf('/') + 1).split('.')[0];
+
+      if (filename === "") {
+        return "index";
+      }else {
+        return filename
+      }
     }
 
     function handleHeaderScroll($header, sectionHeight) {
