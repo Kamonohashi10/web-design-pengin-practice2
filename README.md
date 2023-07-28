@@ -47,4 +47,4 @@ GitHub Pagesで公開中:[https://sim10play.github.io/portfolio02/](https://sim1
    - Google Fonts: 'Noto Serif', 'Noto Serif JP'
    - リセットCSS: ress.min.css
 
-以上がポートフォリオ01の基本情報です。詳細な実装や設定については、各ファイルのコメントやソースコードを参照してください。
+以上がポートフォリオ02の基本情報です。詳細な実装や設定については、各ファイルのコメントやソースコードを参照してください。
