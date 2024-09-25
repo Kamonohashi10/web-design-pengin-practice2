@@ -7,7 +7,7 @@
 
 このポートフォリオは[PENGINさんが配布しているデザインカンプ](https://pengi-n.co.jp/blog/coding-practice2/) を実装したものです。
 
-GitHub Pagesで公開中:[https://Kamonohashi10.github.io/web-design-pengin-practice2/](https://Kamonohashi10.github.io/web-design-pengin-practice2/)
+GitHub Pagesで公開中:[https://jun-1010.github.io/web-design-pengin-practice2/](https://jun-1010.github.io/web-design-pengin-practice2/)
 
 ## 2. ファイル構成
 
